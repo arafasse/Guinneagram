@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="actions.js"></script>
+    <script type="text/javascript" src="actions.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    
-    <script>
-       
-      function myFunction(lineNum) {
-        console.log("hello");
-        var result = loadStrings('assets/questions.txt')
-        var lines = read(result).split("\n");
-        
-        document.getElementById("prompt").innerHTML = lines[lineNum];
-      }
-    
-
-</script>
     
   </head>
   <body>
     <h1>Guinneagram</h1>
-    <p>Select the extent to which you identify with the statement below, with 1 being "not at all" and 5 being "very much so."</p>
+    <p>Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
     
-    <p id="prompt"></p>
-    <button type="button" onclick="myFunction(0)">Next</button>
+    <p id="prompt1">1) People would describe me as easygoing and unflappable; very little can disturb my equanimity.</p>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="5" value="3" class="slider" id="q1">
+  <p>Value: <span id="val"></span></p>
+</div>
+
+    <p id="prompt2">2) "Ennui" is the word that best describes my outlook on life.</p>
+
+    <form>
+      <div id="scores">
+        <input type="radio" id="s1" name="score" value="1"> 1
+        <input type="radio" id="s2" name="score" value="2"> 2
+        <input type="radio" id="s3" name="score" value="3"> 3
+        <input type="radio" id="s4" name="score" value="4"> 4
+        <input type="radio" id="s5" name="score" value="5"> 5
+      </div>
+    </form>
+
+    <p id="prompt3">3) Tomatoes are mystifying.</p>
 
 
     
@@ -39,7 +43,8 @@
         <input type="radio" id="s5" name="score" value="5"> 5
       </div>
     </form>
-    <script src="sketch.js"></script>
+
+    <button type="button" onclick="myFunction(0)">Get Scores</button>
 
   </body>
 </html>
