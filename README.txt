@@ -1,0 +1,1 @@
+This is an effort to learn JSQuery, spread the joy of guinea pigs, and indulge in a fun pun.
