@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="actions.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    
+    <script>
+       
+      function myFunction(lineNum) {
+        console.log("hello");
+        var result = loadStrings('assets/questions.txt')
+        var lines = read(result).split("\n");
+        
+        document.getElementById("prompt").innerHTML = lines[lineNum];
+      }
+    
+
+</script>
+    
+  </head>
+  <body>
+    <h1>Guinneagram</h1>
+    <p>Select the extent to which you identify with the statement below, with 1 being "not at all" and 5 being "very much so."</p>
+    
+    <p id="prompt"></p>
+    <button type="button" onclick="myFunction(0)">Next</button>
+
+
+    
+    <form>
+      <div id="scores">
+        <input type="radio" id="s1" name="score" value="1"> 1
+        <input type="radio" id="s2" name="score" value="2"> 2
+        <input type="radio" id="s3" name="score" value="3"> 3
+        <input type="radio" id="s4" name="score" value="4"> 4
+        <input type="radio" id="s5" name="score" value="5"> 5
+      </div>
+    </form>
+    <script src="sketch.js"></script>
+
+  </body>
+</html>
