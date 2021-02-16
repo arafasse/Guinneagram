@@ -1,6 +1,6 @@
 body {
-  background-image: url("paper.gif");
-  background-repeat: repeat-y;
+  background-image: url("assets/straw3.png");
+  background-repeat: repeat;
 }
 
 .slidecontainer {
@@ -12,7 +12,6 @@ body {
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
   width: 25%; /* Full-width */
   height: 15px;
   border-radius: 5px; 
@@ -32,18 +31,25 @@ body {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50; /* Green background */
+  width: 30px; /* Set a specific slider handle width */
+  height: 40px;
+  border: 0;
+  background-image: url("assets/carrot.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+ /* background: #4CAF50; Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
+  width: 20px; /* Set a specific slider handle width */
   height: 25px;
-  border-radius: 50%;  
-  background: #4CAF50; /* Green background */
+  border: 0;
+  background-image: url("assets/carrot.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   cursor: pointer; /* Cursor on hover */
 }
 
