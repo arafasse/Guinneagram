@@ -1,5 +1,7 @@
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  text-align:center;
+  white-space: nowrap;
 }
 
 /* The slider itself */
@@ -38,4 +40,69 @@
   border-radius: 50%;  
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table#results {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+  }
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+#intro {
+  font-style: italic;
+}
+
+#button1 {
+  text-align: center;
+}
+
+.livescore {
+  background-color: green;
+  padding-left: 25px;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+}
+
+button{
+ display:inline-block;
+ padding:0.5em 3em;
+ border:0.16em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ box-sizing: border-box;
+ text-decoration:none;
+ text-transform:uppercase;
+ font-family:'Roboto',sans-serif;
+ font-weight:400;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.15s;
+}
+button:hover{
+ color:#DDDDDD;
+ border-color:#DDDDDD;
+}
+button:active{
+ color:#BBBBBB;
+ border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+ button{
+  display:block;
+  margin:0.4em auto;
+ }
 }

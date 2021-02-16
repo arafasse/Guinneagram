@@ -8,37 +8,252 @@
   </head>
   <body>
     <h1>Guinneagram</h1>
-    <p>Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
-    
-    <p id="prompt1">Question 1</p>
+    <p id="intro">Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
 
+    <br>
+    <br>
+    
+    <p id="prompt1">1) People would describe me as easygoing and unflappable; very little can disturb my equanimity.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q1">
+    <div class="liveScore"><span id="v1"></span></div>
     </div>
 
-    <p id="prompt2">Question 2</p>
+    <p id="prompt2">2) "Ennui" is the word that best describes my outlook on life.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q2">
+    <span id="v2" class="liveScore"></span>
     </div>
 
-    <p id="prompt3">Question 3</p>
+    <p id="prompt3">3) The world is a scary yet fascinating place.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q3">
+    <span id="v3" class="liveScore"></span>
     </div>
 
-    <button id="b1" type="button" onclick="myFunction(0)">Get Scores</button>
-    <p>Sum: <span id="d1"></span></p>
+    <p id="prompt4">4) I take great pride in my appearance and coiffure, and I enjoy helping others look their best (usually by offering unsolicited haircuts).</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q4">
+    <span id="v4" class="liveScore"></span>
+    </div>
 
+    <p id="prompt5">5) Tomatoes are mystifying.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q5">
+    <span id="v5" class="liveScore"></span>
+    </div>
+
+    <p id="prompt6">6) Sometimes at twilight, I am seized by such unbridled joy that I just feel the need to sprint around in circles.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q6">
+    <span id="v6" class="liveScore"></span>
+    </div>
+
+    <p id="prompt7">7) All I really need to be content with my life is a soft pillow.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q7">
+    <span id="v7" class="liveScore"></span>
+    </div>
+
+    <p id="prompt8">8) I love cuddles and kisses and affection.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q8">
+    <span id="v8" class="liveScore"></span>
+    </div>
+
+    <p id="prompt9">9) I always need to have the last word in an argument, and I'm not above a little hair-pulling.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q9">
+    <span id="v9" class="liveScore"></span>
+    </div>
+
+    <p id="prompt10">10) I love you, don't touch me.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q10">
+    <span id="v10" class="liveScore"></span>
+    </div>
+
+    <p id="prompt11">11) I have psychic abilities; every so often I enter an involuntary trance and commune with my ancestors.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q11">
+    <span id="v11" class="liveScore"></span>
+    </div>
+
+    <p id="prompt12">12) Sometimes I am overwhelmed by my emotions and need to eat plastic to calm my nerves.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q12">
+    <span id="v12" class="liveScore"></span>
+    </div>
+
+    <p id="prompt13">13) I am introverted and a bit moody by nature, but when I want something you will know.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q13">
+    <span id="v13" class="liveScore"></span>
+    </div>
+
+    <p id="prompt14">14) I am always the first to venture out into uncharted territory.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q14">
+    <span id="v14" class="liveScore"></span>
+    </div>
+
+    <p id="prompt15">15) I am frequently peeved by the childish shenanigans of those around me.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q15">
+    <span id="v15" class="liveScore"></span>
+    </div>
+
+    <button class="button" type="button" onclick="myFunction(0)">Get Scores</button>
+
+
+    <br>
+    <table id="results">
+      <tr>
+        <th>Type</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>Type 1: The Edith</td>
+        <td><span id="escore"></span></td>
+      </tr>
+      <tr>
+        <td>Type 2: The Mabel</td>
+        <td><span id="mscore"></td>
+      </tr>
+      <tr>
+        <td>Type 3: The Lola</td>
+        <td><span id="lscore"></td>
+      </tr>
+      <tr>
+        <td>Type 4: The Hester</td>
+        <td><span id="hscore"></td>
+      </tr>
+      <tr>
+        <td>Type 5: The Barbara</td>
+        <td><span id="bscore"></td>
+      </tr>
+    </table>
 
   <script> 
     var e1 = document.getElementById("q1");
     var m1 = document.getElementById("q2");
-    var h1 = document.getElementById("q3");
-    var b1 = document.getElementById("b1");
-    var output = document.getElementById("d1");
+    var l1 = document.getElementById("q3");
+    var b1 = document.getElementById("q4");
+    var h1 = document.getElementById("q5");
+    var h2 = document.getElementById("q6");
+    var e2 = document.getElementById("q7");
+    var b2 = document.getElementById("q8");
+    var h3 = document.getElementById("q9");
+    var l2 = document.getElementById("q10");
+    var m2 = document.getElementById("q11");
+    var b3 = document.getElementById("q12");
+    var m3 = document.getElementById("q13");
+    var l3 = document.getElementById("q14");
+    var e3 = document.getElementById("q15");
 
-    b1.onclick = function() {
-      output.innerHTML = parseInt(e1.value) + parseInt(m1.value) + parseInt(h1.value);
+    var button1 = document.getElementById("button1");
+
+    var output1 = document.getElementById("v1")
+    var output2 = document.getElementById("v2")
+    var output3 = document.getElementById("v3")
+    var output4 = document.getElementById("v4")
+    var output5 = document.getElementById("v5")
+    var output6 = document.getElementById("v6")
+    var output7 = document.getElementById("v7")
+    var output8 = document.getElementById("v8")
+    var output9 = document.getElementById("v9")
+    var output10 = document.getElementById("v10")
+    var output11 = document.getElementById("v11")
+    var output12 = document.getElementById("v12")
+    var output13 = document.getElementById("v13")
+    var output14 = document.getElementById("v14")
+    var output15 = document.getElementById("v15")
+
+    output1.innerHTML = e1.value;
+    output2.innerHTML = m1.value;
+    output3.innerHTML = l1.value;
+    output4.innerHTML = b1.value;
+    output5.innerHTML = h1.value;
+    output6.innerHTML = h2.value;
+    output7.innerHTML = e2.value;
+    output8.innerHTML = b2.value;
+    output9.innerHTML = h3.value;
+    output10.innerHTML = l2.value;
+    output11.innerHTML = m2.value;
+    output12.innerHTML = b3.value;
+    output13.innerHTML = m3.value;
+    output14.innerHTML = l3.value;
+    output15.innerHTML = e3.value;
+
+
+    e1.oninput = function() {
+      output1.innerHTML = this.value;
+    }
+
+    m1.oninput = function() {
+      output2.innerHTML = this.value;
+    }
+
+    l1.oninput = function() {
+      output3.innerHTML = this.value;
+    }
+
+    b1.oninput = function() {
+      output4.innerHTML = this.value;
+    }
+
+    h1.oninput = function() {
+      output5.innerHTML = this.value;
+    }
+
+    h2.oninput = function() {
+      output6.innerHTML = this.value;
+    }
+
+    e2.oninput = function() {
+      output7.innerHTML = this.value;
+    }
+
+    b2.oninput = function() {
+      output8.innerHTML = this.value;
+    }
+
+    h3.oninput = function() {
+      output9.innerHTML = this.value;
+    }
+
+    l2.oninput = function() {
+      output10.innerHTML = this.value;
+    }
+
+    m2.oninput = function() {
+      output11.innerHTML = this.value;
+    }
+
+    b3.oninput = function() {
+      output12.innerHTML = this.value;
+    }
+
+    m3.oninput = function() {
+      output13.innerHTML = this.value;
+    }
+
+    l3.oninput = function() {
+      output14.innerHTML = this.value;
+    }
+
+    e3.oninput = function() {
+      output15.innerHTML = this.value;
+    }
+
+
+    button.onclick = function() {
+      document.getElementById("escore").innerHTML = parseInt(e1.value) + parseInt(e2.value) + parseInt(e3.value);
+      document.getElementById("mscore").innerHTML = parseInt(m1.value) + parseInt(m2.value) + parseInt(m3.value);
+      document.getElementById("lscore").innerHTML = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
+      document.getElementById("hscore").innerHTML = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
+      document.getElementById("bscore").innerHTML = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
+
     }
   </script>
 
