@@ -1,3 +1,8 @@
+body {
+  background-image: url("paper.gif");
+  background-repeat: repeat-y;
+}
+
 .slidecontainer {
   width: 100%; /* Width of the outside container */
   text-align:center;
@@ -47,17 +52,18 @@ table, th, td {
 }
 
 table#results {
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    width:50%; 
+    margin-left:25%; 
+    margin-right:25%;
   }
 
 p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 150px;
   margin-left: 150px;
+  font-family: Helvetica;
 }
 
 #intro {
@@ -78,8 +84,13 @@ p {
   border-color: #d3d3d3;
 }
 
-h1 {
+h1, h3{
   text-align: center;
+  font-family: Helvetica;
+}
+
+table{
+  font-family: Helvetica;
 }
 
 button{
@@ -96,6 +107,7 @@ button{
  text-align:center;
  transition: all 0.15s;
 }
+
 button:hover{
  color:#DDDDDD;
  border-color:#DDDDDD;
@@ -110,3 +122,7 @@ button:active{
   margin:0.4em auto;
  }
 }
+
+#results .hidden_row { 
+  display: none; 
+} 

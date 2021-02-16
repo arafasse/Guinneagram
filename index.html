@@ -8,9 +8,9 @@
   </head>
   <body>
     <h1>Guinneagram</h1>
+    <h3>Inspired by <a href="https://www.enneagraminstitute.com/">the Enneagram</a></h3>
     <p id="intro">Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
 
-    <br>
     <br>
     
     <p id="prompt1">1) People would describe me as easygoing and unflappable; very little can disturb my equanimity.</p>
@@ -25,7 +25,7 @@
     <span id="v2" class="liveScore"></span>
     </div>
 
-    <p id="prompt3">3) The world is a scary yet fascinating place.</p>
+    <p id="prompt3">3) The world is an alarming yet fascinating place.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q3">
     <span id="v3" class="liveScore"></span>
@@ -79,13 +79,13 @@
     <span id="v11" class="liveScore"></span>
     </div>
 
-    <p id="prompt12">12) Sometimes I am overwhelmed by my emotions and need to eat plastic to calm my nerves.</p>
+    <p id="prompt12">12) When overwhelmed by emotions, I cope by expressing myself through art (which usually takes the form of chewing plastic).</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q12">
     <span id="v12" class="liveScore"></span>
     </div>
 
-    <p id="prompt13">13) I am introverted and a bit moody by nature, but when I want something you will know.</p>
+    <p id="prompt13">13) I am introverted and generally pretty quiet, but when I want something I will scream to high heaven.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q13">
     <span id="v13" class="liveScore"></span>
@@ -103,34 +103,67 @@
     <span id="v15" class="liveScore"></span>
     </div>
 
-    <button class="button" type="button" onclick="myFunction(0)">Get Scores</button>
+    <br> 
 
+    <div style="text-align:center">
+      <button type="button">Get Scores</button>
+    </div>
 
     <br>
+
+    <p>Congratulations! You are <span id="mainType"></span></p>
+
+    <br>
+    <p>Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
     <table id="results">
       <tr>
-        <th>Type</th>
+        <th>Guinneagram Type</th>
         <th>Score</th>
       </tr>
-      <tr>
-        <td>Type 1: The Edith</td>
+      <tr onclick="showHideRow('hidden_row1');">
+        <td><b>Type 1:</b> The Edith</td>
         <td><span id="escore"></span></td>
       </tr>
-      <tr>
-        <td>Type 2: The Mabel</td>
+      <tr id="hidden_row1" class="hidden_row">
+        <td colspan=2>
+          &emsp;The rational, easygoing type: agreeable, self-controlled, adaptive, and complacent 
+        </td>
+      </tr>
+      <tr onclick="showHideRow('hidden_row2');">
+        <td><b>Type 2:</b> The Mabel</td>
         <td><span id="mscore"></td>
       </tr>
-      <tr>
-        <td>Type 3: The Lola</td>
+      <tr id="hidden_row2" class="hidden_row">
+        <td colspan=2>
+          &emsp;The sensitive, withdrawn type: expressive, pensive, dramatic, and tempermental
+        </td>
+      </tr>
+      <tr onclick="showHideRow('hidden_row3');">
+        <td><b>Type 3:</b> The Lola</td>
         <td><span id="lscore"></td>
       </tr>
-      <tr>
-        <td>Type 4: The Hester</td>
+      <tr id="hidden_row3" class="hidden_row">
+        <td colspan=2>
+          &emsp;The curious, cerebral type: perceptive, innovative, isolated, and anxious
+        </td>
+      </tr>
+      <tr onclick="showHideRow('hidden_row4');">
+        <td><b>Type 4:</b> The Hester</td>
         <td><span id="hscore"></td>
       </tr>
-      <tr>
-        <td>Type 5: The Barbara</td>
+      <tr id="hidden_row4" class="hidden_row">
+        <td colspan=2>
+          &emsp;The optimistic, fun-loving type: spontaneous, confident, willful, and confrontational
+        </td>
+      </tr>
+      <tr onclick="showHideRow('hidden_row5');">
+        <td><b>Type 5:</b> The Baahbara</td>
         <td><span id="bscore"></td>
+      </tr>
+      <tr id="hidden_row5" class="hidden_row">
+        <td colspan=2>
+          &emsp;The caring, interpersonal type: demonstrative, generous, people/pig-pleasing, and high-strung 
+        </td>
       </tr>
     </table>
 
@@ -253,10 +286,13 @@
       document.getElementById("lscore").innerHTML = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
       document.getElementById("hscore").innerHTML = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
       document.getElementById("bscore").innerHTML = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
+      document.getElementById("mainType").innerHTML = "an Edith";
+
+    function showHideRow(row) { 
+      $("#" + row).toggle(); 
+    } 
 
     }
   </script>
-
-
   </body>
 </html>
