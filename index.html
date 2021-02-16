@@ -85,7 +85,7 @@
     <span id="v12" class="liveScore"></span>
     </div>
 
-    <p id="prompt13">13) I am introverted and generally pretty quiet, but when I want something I will scream to high heaven.</p>
+    <p id="prompt13">13) I am introverted and generally rather quiet (some would say sullen), but when I want something I know how to make myself heard, usually by shrieking at 6 am.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q13">
     <span id="v13" class="liveScore"></span>
@@ -106,7 +106,7 @@
     <br> 
 
     <div style="text-align:center">
-      <button type="button">Get Scores</button>
+      <button id="getScore" type="button">Get Scores</button>
     </div>
 
     <br>
@@ -280,19 +280,30 @@
     }
 
 
-    button.onclick = function() {
-      document.getElementById("escore").innerHTML = parseInt(e1.value) + parseInt(e2.value) + parseInt(e3.value);
-      document.getElementById("mscore").innerHTML = parseInt(m1.value) + parseInt(m2.value) + parseInt(m3.value);
-      document.getElementById("lscore").innerHTML = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
-      document.getElementById("hscore").innerHTML = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
-      document.getElementById("bscore").innerHTML = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
+    getScore.onclick = function() {
+      var edith = parseInt(e1.value) + parseInt(e2.value) + parseInt(e3.value);
+      var mabel = parseInt(m1.value) + parseInt(m2.value) + parseInt(m3.value);
+      var lola = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
+      var hester = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
+      var barbara = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
+      document.getElementById("escore").innerHTML = edith;
+      document.getElementById("mscore").innerHTML = mabel;
+      document.getElementById("lscore").innerHTML = lola;
+      document.getElementById("hscore").innerHTML = hester;
+      document.getElementById("bscore").innerHTML = barbara;
       document.getElementById("mainType").innerHTML = "an Edith";
+    }
 
     function showHideRow(row) { 
-      $("#" + row).toggle(); 
+      var currentRow = document.getElementById(row);
+      if (currentRow.style.display == '') {
+        currentRow.style.display = 'none';
+      }
+      else {
+        currentRow.style.display = '';
+      }    
     } 
 
-    }
   </script>
   </body>
 </html>
