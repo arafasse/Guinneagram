@@ -68,10 +68,14 @@ p {
   text-align: center;
 }
 
-.livescore {
-  background-color: green;
-  padding-left: 25px;
+.liveScore {
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #d3d3d3;
 }
 
 h1 {
