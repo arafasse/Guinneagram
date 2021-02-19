@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="actions.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        function showHideRow(row) { 
+        $("#"+row).toggle();
+    }
+  </script>
     
   </head>
   <body>
@@ -113,7 +119,6 @@
 
     <p>Congratulations! You are <span id="mainType"></span></p>
 
-    <br>
     <p>Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
     <table id="results">
       <tr>
@@ -167,6 +172,7 @@
       </tr>
     </table>
 
+ 
   <script> 
     var e1 = document.getElementById("q1");
     var m1 = document.getElementById("q2");
@@ -286,15 +292,70 @@
       var lola = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
       var hester = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
       var barbara = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
+      var allScores = [edith, mabel, lola, hester, barbara];
+    
+      var yourType = "";
+
+      var max = Math.max(...allScores);
+      
+
+      for (var i = 0; i < allScores.length; i++) {
+        console.log(i);
+        console.log(allScores[i]);
+        console.log(max);
+        if (allScores[i]==max) {
+          if (i==0) {
+            if (yourType !== "") {
+              yourType = yourType.concat(" and ");
+            }
+            yourType = yourType.concat("an Edith");
+          }          
+          else if (i==1) {
+            if (yourType !== "") {
+              yourType = yourType.concat(" and ");
+            }
+            yourType = yourType.concat("a Mabel");
+          }
+          else if (i==2) {
+            if (yourType !== "") {
+              yourType = yourType.concat(" and ");
+            }
+            yourType = yourType.concat("a Lola");
+          }
+          else if (i==3) {
+            if (yourType !== "") {
+              yourType = yourType.concat(" and ");
+            }
+            yourType = yourType.concat("a Hester");
+          }
+          else if (i==4) {
+            if (yourType !== "") {
+              yourType = yourType.concat(" and ");
+            }
+            yourType = yourType.concat("a Baahbara");
+          }
+        }
+
+      }
+      yourType = yourType.concat(".")
+
+
+      // come back and write this as a separate function
+      // i have so much to do WHY AM I DOING THIS 
+      
+
       document.getElementById("escore").innerHTML = edith;
       document.getElementById("mscore").innerHTML = mabel;
       document.getElementById("lscore").innerHTML = lola;
       document.getElementById("hscore").innerHTML = hester;
       document.getElementById("bscore").innerHTML = barbara;
-      document.getElementById("mainType").innerHTML = "an Edith";
+
+
+      document.getElementById("mainType").innerHTML = yourType;
     }
 
-    function showHideRow(row) { 
+
+    function stuff (row) {
       var currentRow = document.getElementById(row);
       if (currentRow.style.display == '') {
         currentRow.style.display = 'none';
@@ -303,6 +364,15 @@
         currentRow.style.display = '';
       }    
     } 
+
+
+    function getAllIndexes(arr, val) {
+      var indexes = [], i = -1;
+      while ((i = arr.indexOf(val, i+1)) != -1){
+        indexes.push(i);
+      }
+      return indexes;
+    }
 
   </script>
   </body>
