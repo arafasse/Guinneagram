@@ -13,7 +13,7 @@
     
   </head>
   <body>
-    <img src="assets/title3.png" class="title">
+    <img src="assets/title4.png" class="title">
     <h3>Inspired by <a href="https://www.enneagraminstitute.com/" target="_blanks">the Enneagram</a></h3>
     <p id="intro">Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
 
@@ -112,12 +112,12 @@
     <br> 
 
     <div style="text-align:center">
-      <button id="getScore" type="button">Get Scores</button>
+      <button id="getScore" class="button">Get Scores</button>
     </div>
 
     <br>
 
-    <p>Congratulations! You are <span id="mainType"></span></p>
+    <p><span id="mainType"></span></p>
 
     <p>Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
     <table id="results">
@@ -338,6 +338,8 @@
 
       }
       yourType = yourType.concat(".")
+      var intro = "Congratulations! You are ";
+      yourType = intro.concat(yourType);
 
 
       // come back and write this as a separate function
