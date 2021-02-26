@@ -236,7 +236,7 @@ button:active{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -53px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -259,9 +259,9 @@ button:active{
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 30px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -282,7 +282,7 @@ button:active{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
