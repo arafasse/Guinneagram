@@ -3,6 +3,11 @@ body {
   background-repeat: repeat;
 }
 
+.copyright{
+  font-style: italic;
+  font-size: 12px;
+}
+
 .button {
   background-color:#a3ca7f;
   border-radius:28px;
