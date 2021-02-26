@@ -159,16 +159,17 @@
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
-          </div>
+            <a class="prev" onclick="plusSlides(-1, slideshowE)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshowE)">&#10095;</a>
+          
           <br>
 
           <!-- The dots/circles -->
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(2,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(3,this.parentNode)"></span> 
+            <span class="dot" onclick="currentSlide(1,slideshowE)"></span> 
+            <span class="dot" onclick="currentSlide(2,slideshowE)"></span> 
+            <span class="dot" onclick="currentSlide(3,slideshowE)"></span> 
+          </div>
           </div>
 
         </td>
@@ -185,7 +186,7 @@
           <p class="traits">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisi neque, laoreet in mollis vitae, cursus at nisi. Sed laoreet semper tristique. Maecenas ultrices urna et mauris feugiat aliquet. Duis augue metus, tristique eu ornare porttitor, accumsan sed justo.</p>
 
                     <!-- Slideshow container -->
-          <div class="slideshow-container" id="slideshowM">
+          <div id="slideshowM" class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
@@ -209,15 +210,15 @@
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1,this.parentNode)">&#10094;</a>
             <a class="next" onclick="plusSlides(1,this.parentNode)">&#10095;</a>
-          </div>
           <br>
 
           <!-- The dots/circles -->
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(2,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(3,this.parentNode)"></span> 
+            <span class="dot" onclick="currentSlide(1,slideshowM)"></span> 
+            <span class="dot" onclick="currentSlide(2,slideshowM)"></span> 
+            <span class="dot" onclick="currentSlide(3,slideshowM)"></span> 
           </div>
+         </div>
 
         </td>
       </tr>
@@ -254,15 +255,16 @@
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1,this.parentNode)">&#10094;</a>
             <a class="next" onclick="plusSlides(1,this.parentNode)">&#10095;</a>
-          </div>
           <br>
 
           <!-- The dots/circles -->
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(2,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(3,this.parentNode)"></span> 
+            <span class="dot" onclick="currentSlide(1,slideshowL)"></span> 
+            <span class="dot" onclick="currentSlide(2,slideshowL)"></span> 
+            <span class="dot" onclick="currentSlide(3,slideshowL)"></span> 
           </div>
+        </div>
+
         </td>
       </tr>
       <tr onclick="showHideRow('hidden_row4');">
@@ -301,15 +303,16 @@
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1,this.parentNode)">&#10094;</a>
             <a class="next" onclick="plusSlides(1,this.parentNode)">&#10095;</a>
-          </div>
+          
           <br>
 
           <!-- The dots/circles -->
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(2,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(3,this.parentNode)"></span> 
+            <span class="dot" onclick="currentSlide(1,slideshowH)"></span> 
+            <span class="dot" onclick="currentSlide(2,slideshowH)"></span> 
+            <span class="dot" onclick="currentSlide(3,slideshowH)"></span> 
           </div>
+        </div>
         </td>
       </tr>
       <tr onclick="showHideRow('hidden_row5');">
@@ -344,15 +347,16 @@
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1,this.parentNode)">&#10094;</a>
             <a class="next" onclick="plusSlides(1,this.parentNode)">&#10095;</a>
-          </div>
+         
           <br>
 
           <!-- The dots/circles -->
           <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(2,this.parentNode)"></span> 
-            <span class="dot" onclick="currentSlide(3,this.parentNode)"></span> 
+            <span class="dot" onclick="currentSlide(1,slideshowB)"></span> 
+            <span class="dot" onclick="currentSlide(2,slideshowB)"></span> 
+            <span class="dot" onclick="currentSlide(3,slideshowB)"></span> 
           </div>
+           </div>
         </td>
       </tr>
     </table>
@@ -602,13 +606,16 @@
 
     // Thumbnail image controls
     function currentSlide(n, slideshow) {
+      console.log(slideshow);
       showSlides(slideshow.slideIndex = n, slideshow);
     }
 
     function showSlides(n, slideshow) {
+      console.log(slideshow);
+      console.log(slideshow.slideIndex);
       var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+      var slides = slideshow.getElementsByClassName("mySlides");
+      var dots = slideshow.getElementsByClassName("dot");
       if (n > slides.length) {slideshow.slideIndex = 1} 
       if (n < 1) {slideshow.slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
@@ -617,6 +624,7 @@
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
+      console.log(slides);
       slides[slideshow.slideIndex-1].style.display = "block"; 
       dots[slideshow.slideIndex-1].className += " active";
     }
