@@ -11,7 +11,8 @@ body {
   cursor:pointer;
   color:#ffffff;
   font-family:Arial;
-  font-size:17px;
+  font-size:20px;
+  font-weight: bold;
   padding:16px 31px;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
@@ -155,6 +156,16 @@ p {
 
 #intro {
   font-style: italic;
+  font-size: 18px;
+}
+
+#breakdown{
+  font-size: 18px;
+}
+
+#mainType {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #button1 {
@@ -169,6 +180,8 @@ p {
   border: 2px solid;
   border-radius: 5px;
   border-color: #d3d3d3;
+  font-family: Helvetica;
+  font-size: 18px;
 }
 
 h1, h3{
@@ -176,9 +189,14 @@ h1, h3{
   font-family: Helvetica;
 }
 
+h3{
+  font-size: 24px;
+}
+
 table{
   font-family: Helvetica;
 }
+
 
 button{
  display:inline-block;
@@ -310,3 +328,33 @@ button:active{
   from {opacity: .4} 
   to {opacity: 1}
 } 
+
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+#results tr:nth-child(even){
+  background-color: #d3d3d3;
+  opacity: 0.7;
+}
+
+#results tr:hover {opacity: 1;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #a3ca7f;
+  color: white;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  font-weight: bold;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+}

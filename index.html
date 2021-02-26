@@ -109,7 +109,9 @@
     <span id="v15" class="liveScore"></span>
     </div>
 
+    <br>
     <br> 
+ 
 
     <div style="text-align:center">
       <button id="getScore" class="button">Get Scores</button>
@@ -119,7 +121,7 @@
 
     <p><span id="mainType"></span></p>
 
-    <p>Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
+    <p id="breakdown">Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
     <table id="results">
       <tr>
         <th>Guinneagram Type</th>
@@ -622,7 +624,7 @@
       document.getElementById("bscore").innerHTML = barbara;
 
 
-      document.getElementById("mainType").innerHTML = yourType;
+      document.getElementById("mainType").innerHTML =yourType;
     }
 
 
