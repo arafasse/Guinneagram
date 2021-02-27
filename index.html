@@ -14,7 +14,7 @@
   </head>
   <body>
     <img src="assets/title5.png" class="title">
-    <h3>Inspired by <a href="https://www.enneagraminstitute.com/" target="_blanks">the Enneagram</a></h3>
+    <h3>Inspired by <a class="enneagram" href="https://www.enneagraminstitute.com/" target="_blanks">the Enneagram</a></h3>
     <p id="intro">Select the extent to which you identify with each of the statements below, with 1 being "strongly disagree" and 5 being "strongly agree."</p>
 
     <br>
@@ -118,7 +118,7 @@
     </div>
 
     <br>
-
+    <div id="afterclick">
     <p><span id="mainType"></span></p>
 
     <p id="breakdown">Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
@@ -442,11 +442,13 @@
         </td>
       </tr>
     </table>
+  </div>
     <br>
     <br>
     <p class="copyright">Copyright &#169; 2021 Olivia Waring</p>
  
   <script> 
+    document.getElementById("afterclick").style.display="none";
     var e1 = document.getElementById("q1");
     var m1 = document.getElementById("q2");
     var l1 = document.getElementById("q3");
@@ -560,6 +562,12 @@
 
 
     getScore.onclick = function() {
+
+      var x = document.getElementById("afterclick");
+      if (x.style.display === "none") {
+        x.style.display = "block"; 
+      }
+
       var edith = parseInt(e1.value) + parseInt(e2.value) + parseInt(e3.value);
       var mabel = parseInt(m1.value) + parseInt(m2.value) + parseInt(m3.value);
       var lola = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
@@ -618,6 +626,7 @@
       // come back and write this as a separate function
       // i have so much to do WHY AM I DOING THIS 
       
+
 
       document.getElementById("escore").innerHTML = edith;
       document.getElementById("mscore").innerHTML = mabel;

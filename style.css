@@ -202,7 +202,6 @@ table{
   font-family: Helvetica;
 }
 
-
 button{
  display:inline-block;
  padding:0.5em 3em;
@@ -362,4 +361,23 @@ button:active{
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
 }
+
+/* unvisited link */
+a.enneagram:link {
+  color: #ff7518;
+}
+
+/* visited link */
+a.enneagram:visited {
+  color: green;
+}
+
+/* mouse over link */
+a.enneagram:hover {
+  color: #ff7518;
+}
+
+/* selected link */
+a.enneagram:active {
+  color: green;
 }
