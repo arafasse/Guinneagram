@@ -40,11 +40,10 @@ body {
 }
 
 .title {
-  width: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 55%;
   opacity: 0.85;
 }
 
@@ -52,7 +51,8 @@ body {
   width: 100%; /* Width of the outside container */
   text-align:center;
   white-space: nowrap;
-  padding-left: 35px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* The slider itself */
@@ -241,11 +241,11 @@ button:active{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 700px;
   position: relative;
   display: block;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* Hide the images by default */
@@ -370,7 +370,7 @@ a.enneagram:link {
 
 /* visited link */
 a.enneagram:visited {
-  color: green;
+  color: #6fa94d;
 }
 
 /* mouse over link */
@@ -380,7 +380,7 @@ a.enneagram:hover {
 
 /* selected link */
 a.enneagram:active {
-  color: green;
+  color: #6fa94d;
 }
 
 
@@ -393,6 +393,7 @@ a.enneagram:active {
   margin-right: 20px;
   margin-left: 20px;
   font-family: Helvetica;
+
   }
 table#results {
     width:90%; 
@@ -405,6 +406,20 @@ table#results {
   max-width: 500px;
   position: relative;
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.title {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  opacity: 0.85;
+}
+
+.traits {
+  text-align: justify;
+  text-justify: inter-word;
 }
