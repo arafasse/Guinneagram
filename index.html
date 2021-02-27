@@ -121,7 +121,7 @@
     <div id="afterclick">
     <p><span id="mainType"></span></p>
 
-    <p id="breakdown">Every person (and pig) has elements of all 5 types. Your score breakdown is as follows:</p>
+    <p id="breakdown">Every person (and pig) demonstrates elements of all 5 types. Your score breakdown is as follows:</p>
     <table id="results">
       <tr>
         <th>Guinneagram Type</th>
@@ -194,7 +194,7 @@
           <p class="traits">The sensitive, withdrawn type: expressive, pensive, dramatic, and tempermental</p>
           <p class="traits">Basic Desire: Lettuce</p>
           <p class="traits">Basic Fear: Lack of lettuce</p>
-          <p class="traits">Mabels are sensitive, emotional, and melancholy. A healthy Mabel is introspective, intuitive, and inclined towards the spiritual. An unhealthy Mabel can fall prey to melodrama, self-pity, and self-indulgence. Mabels occasionally lapse into periods of nihilism, wondering what really <i>is</i> the point to life, but they usually abandon such existential ponderings when lettuce is made available. Mabels are often homebodies, but they enjoy exploring and expanding their horizons when given the opportunity. They are selective about their companions yet extremely loyal once they have identified a true friend (though they are prone to petty squabbles). Of all the types, the Mabel is most likely to experience other-worldly phenomena and commune with The Beyond.</p>
+          <p class="traits">Mabels are emotional, introspective, and melancholy. A healthy Mabel is thoughtful, intuitive, and inclined towards the spiritual; an unhealthy Mabel can fall prey to melodrama, self-pity, and self-indulgence. Mabels occasionally lapse into periods of nihilism, wondering what really <i>is</i> the point to life, but they usually abandon such existential ponderings when lettuce is made available. Mabels are often homebodies, but they enjoy exploring and expanding their horizons when given the opportunity. They are selective about their companions yet extremely loyal once they have identified a true friend (though they are prone to petty squabbles). If you identify as a Mabel, you may have been "The Emo Kid" in high school. Of the five types, the Mabel is most likely to experience other-worldly phenomena and commune with The Great Beyond.</p>
 
           <br>
 
@@ -259,7 +259,7 @@
           <p class="traits">The curious, cerebral type: perceptive, innovative, isolated, and anxious</p>
           <p class="traits">Basic Desire: Cucumbers</p>
           <p class="traits">Basic Fear: Excessive cuddling</p>
-          <p class="traits">Lolas are...</p>
+          <p class="traits">Lolas are alert, insightful, and individualistic. The are constantly ... expand their knowledge and understanding of their surroundings, but they ... wary of the world and its workings. Not comfortable with ... displays of emotion, Lolas spend most of their time alone, and often feel ... The first to take the plunge into the unknown and to ... Occasionally beset by nervous tics, such as gnawing on ... </p>
 
           <br>
                               <!-- Slideshow container -->
@@ -323,7 +323,7 @@
           <p class="traits">The optimistic, fun-loving type: spontaneous, confident, willful, and confrontational</p>
           <p class="traits">Basic Desire: Room to zoom</p>
           <p class="traits">Basic Fear: "The Sky Hand"</p>
-          <p class="traits">Hesters are ... </p>
+          <p class="traits">Hesters are extroverted, bold, adventurous, and occasionally domineering. Of all the types, Hester ... of pure, simple joy: ... Excess energy... Hesters can be bullies however, and ... but their nature is such that they frequently almost immediately get over the fight and want to be friends again, much to the confusion of their ... Often very athletic </p>
 
                     <!-- Slideshow container -->
           <div class="slideshow-container" id="slideshowH">
@@ -384,10 +384,10 @@
       </tr>
       <tr id="hidden_row5" class="hidden_row">
         <td colspan=2>
-          <p class="traits">The caring, interpersonal type: demonstrative, generous, people/pig-pleasing, and high-strung</p>
+          <p class="traits">The caring, interpersonal type: demonstrative, generous, people/pig-pleasing, and high-strung - Sid is right, this is not quite right...</p>
           <p class="traits">Basic Desire: Chin and ear scritchies</p>
           <p class="traits">Basic Fear: Haircuts</p> 
-          <p class="traits">Baahbaras are...</p>
+          <p class="traits">Baahbaras are ... A healthy Baahbara is empathetic and ... An unhealthy Baahbara is needy, ... erratic, and ... Baahbara's approach everything with intensity: whether joy, fear, pain, or ..., ... their experience of every emotion is heightened. Because of this, they can often be irritable and ... Baahbaras have a great capactiy for ..., and can often be found comforting others, perhaps because they themselves are so ... to heightened emotions. Baahbaras also tend to be a bit vain about their appearance and pride themselves on... </p>
                               <!-- Slideshow container -->
           <div class="slideshow-container" id="slideshowB">
 
@@ -447,276 +447,6 @@
     <br>
     <p class="copyright">Copyright &#169; 2021 Olivia Waring</p>
  
-  <script> 
-    document.getElementById("afterclick").style.display="none";
-    var e1 = document.getElementById("q1");
-    var m1 = document.getElementById("q2");
-    var l1 = document.getElementById("q3");
-    var b1 = document.getElementById("q4");
-    var h1 = document.getElementById("q5");
-    var h2 = document.getElementById("q6");
-    var e2 = document.getElementById("q7");
-    var b2 = document.getElementById("q8");
-    var h3 = document.getElementById("q9");
-    var l2 = document.getElementById("q10");
-    var m2 = document.getElementById("q11");
-    var b3 = document.getElementById("q12");
-    var m3 = document.getElementById("q13");
-    var l3 = document.getElementById("q14");
-    var e3 = document.getElementById("q15");
-
-    var button1 = document.getElementById("button1");
-
-    var output1 = document.getElementById("v1")
-    var output2 = document.getElementById("v2")
-    var output3 = document.getElementById("v3")
-    var output4 = document.getElementById("v4")
-    var output5 = document.getElementById("v5")
-    var output6 = document.getElementById("v6")
-    var output7 = document.getElementById("v7")
-    var output8 = document.getElementById("v8")
-    var output9 = document.getElementById("v9")
-    var output10 = document.getElementById("v10")
-    var output11 = document.getElementById("v11")
-    var output12 = document.getElementById("v12")
-    var output13 = document.getElementById("v13")
-    var output14 = document.getElementById("v14")
-    var output15 = document.getElementById("v15")
-
-    output1.innerHTML = e1.value;
-    output2.innerHTML = m1.value;
-    output3.innerHTML = l1.value;
-    output4.innerHTML = b1.value;
-    output5.innerHTML = h1.value;
-    output6.innerHTML = h2.value;
-    output7.innerHTML = e2.value;
-    output8.innerHTML = b2.value;
-    output9.innerHTML = h3.value;
-    output10.innerHTML = l2.value;
-    output11.innerHTML = m2.value;
-    output12.innerHTML = b3.value;
-    output13.innerHTML = m3.value;
-    output14.innerHTML = l3.value;
-    output15.innerHTML = e3.value;
-
-
-    e1.oninput = function() {
-      output1.innerHTML = this.value;
-    }
-
-    m1.oninput = function() {
-      output2.innerHTML = this.value;
-    }
-
-    l1.oninput = function() {
-      output3.innerHTML = this.value;
-    }
-
-    b1.oninput = function() {
-      output4.innerHTML = this.value;
-    }
-
-    h1.oninput = function() {
-      output5.innerHTML = this.value;
-    }
-
-    h2.oninput = function() {
-      output6.innerHTML = this.value;
-    }
-
-    e2.oninput = function() {
-      output7.innerHTML = this.value;
-    }
-
-    b2.oninput = function() {
-      output8.innerHTML = this.value;
-    }
-
-    h3.oninput = function() {
-      output9.innerHTML = this.value;
-    }
-
-    l2.oninput = function() {
-      output10.innerHTML = this.value;
-    }
-
-    m2.oninput = function() {
-      output11.innerHTML = this.value;
-    }
-
-    b3.oninput = function() {
-      output12.innerHTML = this.value;
-    }
-
-    m3.oninput = function() {
-      output13.innerHTML = this.value;
-    }
-
-    l3.oninput = function() {
-      output14.innerHTML = this.value;
-    }
-
-    e3.oninput = function() {
-      output15.innerHTML = this.value;
-    }
-
-
-    getScore.onclick = function() {
-
-      var x = document.getElementById("afterclick");
-      if (x.style.display === "none") {
-        x.style.display = "block"; 
-      }
-
-      var edith = parseInt(e1.value) + parseInt(e2.value) + parseInt(e3.value);
-      var mabel = parseInt(m1.value) + parseInt(m2.value) + parseInt(m3.value);
-      var lola = parseInt(l1.value) + parseInt(l2.value) + parseInt(l3.value);
-      var hester = parseInt(h1.value) + parseInt(h2.value) + parseInt(h3.value);
-      var barbara = parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value);
-      var allScores = [edith, mabel, lola, hester, barbara];
-    
-      var yourType = "";
-
-      var max = Math.max(...allScores);
-      
-
-      for (var i = 0; i < allScores.length; i++) {
-        console.log(i);
-        console.log(allScores[i]);
-        console.log(max);
-        if (allScores[i]==max) {
-          if (i==0) {
-            if (yourType !== "") {
-              yourType = yourType.concat(" and ");
-            }
-            yourType = yourType.concat("an Edith");
-          }          
-          else if (i==1) {
-            if (yourType !== "") {
-              yourType = yourType.concat(" and ");
-            }
-            yourType = yourType.concat("a Mabel");
-          }
-          else if (i==2) {
-            if (yourType !== "") {
-              yourType = yourType.concat(" and ");
-            }
-            yourType = yourType.concat("a Lola");
-          }
-          else if (i==3) {
-            if (yourType !== "") {
-              yourType = yourType.concat(" and ");
-            }
-            yourType = yourType.concat("a Hester");
-          }
-          else if (i==4) {
-            if (yourType !== "") {
-              yourType = yourType.concat(" and ");
-            }
-            yourType = yourType.concat("a Baahbara");
-          }
-        }
-
-      }
-      yourType = yourType.concat(".")
-      var intro = "Congratulations! You are ";
-      yourType = intro.concat(yourType);
-
-
-      // come back and write this as a separate function
-      // i have so much to do WHY AM I DOING THIS 
-      
-
-
-      document.getElementById("escore").innerHTML = edith;
-      document.getElementById("mscore").innerHTML = mabel;
-      document.getElementById("lscore").innerHTML = lola;
-      document.getElementById("hscore").innerHTML = hester;
-      document.getElementById("bscore").innerHTML = barbara;
-
-
-      document.getElementById("mainType").innerHTML =yourType;
-    }
-
-
-    function stuff (row) {
-      var currentRow = document.getElementById(row);
-      if (currentRow.style.display == '') {
-        currentRow.style.display = 'none';
-      }
-      else {
-        currentRow.style.display = '';
-      }    
-    } 
-
-
-    function getAllIndexes(arr, val) {
-      var indexes = [], i = -1;
-      while ((i = arr.indexOf(val, i+1)) != -1){
-        indexes.push(i);
-      }
-      return indexes;
-    }
-
-    //var slideIndex = 1;
-
-    var slideshowE = document.getElementById("slideshowE");
-    slideshowE.slideIndex = 1;
-    showSlides(slideshowE.slideIndex, slideshowE);
-
-    var slideshowM = document.getElementById("slideshowM");
-    slideshowM.slideIndex = 1;
-    showSlides(slideshowM.slideIndex, slideshowM);
-
-    var slideshowL = document.getElementById("slideshowL");
-    slideshowL.slideIndex = 1;
-    showSlides(slideshowL.slideIndex, slideshowL);
-
-    var slideshowH = document.getElementById("slideshowH");
-    slideshowH.slideIndex = 1;
-    showSlides(slideshowH.slideIndex, slideshowH);
-
-    var slideshowB = document.getElementById("slideshowB");
-    slideshowB.slideIndex = 1;
-    showSlides(slideshowB.slideIndex, slideshowB);
-
-
-
-    // Next/previous controls
-    function plusSlides(n, slideshow) {
-      slideshow.slideIndex += n;
-      var slides = slideshow.getElementsByClassName("mySlides");
-      
-      if (slideshow.slideIndex > slides.length){ // this is hard-coded, which is not great... can fix later
-        slideshow.slideIndex = 1;
-      }
-      else if (slideshow.slideIndex < 1) {
-        slideshow.slideIndex = slides.length;
-      }
-      showSlides(slideshow.slideIndex, slideshow);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n, slideshow) {
-      showSlides(slideshow.slideIndex = n, slideshow);
-    }
-
-    function showSlides(n, slideshow) {
-      var i;
-      var slides = slideshow.getElementsByClassName("mySlides");
-      var dots = slideshow.getElementsByClassName("dot");
-      if (n > slides.length) {slideshow.slideIndex = 1} 
-      if (n < 1) {slideshow.slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none"; 
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideshow.slideIndex-1].style.display = "block"; 
-      dots[slideshow.slideIndex-1].className += " active";
-    }
-
-  </script>
+  <script src="actions.js"> </script>
   </body>
 </html>
