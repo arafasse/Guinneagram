@@ -80,7 +80,7 @@ body {
   width: 30px; /* Set a specific slider handle width */
   height: 40px;
   border: 0;
-  background-image: url("assets/carrot2.png");
+  background-image: url("assets/carrot3.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@ body {
   width: 20px; /* Set a specific slider handle width */
   height: 25px;
   border: 0;
-  background-image: url("assets/carrot2.png");
+  background-image: url("assets/carrot3.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -400,6 +400,30 @@ table#results {
     margin-left:5%; 
     margin-right:5%;
   }
+
+  .slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  width: 75%; /* Full-width */
+  height: 15px;
+  border-radius: 5px; 
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider_tomato {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  width: 75%; /* Full-width */
+  height: 15px;
+  border-radius: 5px; 
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
 
   /* Slideshow container */
 .slideshow-container {
