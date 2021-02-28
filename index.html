@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+    <title>Guinneagram</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
         function showHideRow(row) { 
         $("#"+row).toggle();
     }
-  </script>
-    
+    </script> 
+    <link rel="icon" href="assets/carrot2.png">
   </head>
+
   <body>
     <img src="assets/title5.png" class="title">
     <h3>Inspired by <a class="enneagram" href="https://www.enneagraminstitute.com/" target="_blanks">the Enneagram</a></h3>
@@ -19,19 +21,20 @@
 
     <br>
     
-    <p id="prompt1">1) People would describe me as easygoing and unflappable; very little can disturb my equanimity.</p>
-    <div class="slidecontainer">
-    <input type="range" min="1" max="5" value="3" class="slider" id="q1">
-    <span id="v1" class="liveScore"></span>
-    </div>
 
-    <p id="prompt2">2) "Ennui" is the word that best describes my outlook on life.</p>
+    <p id="prompt2">1) "Ennui" is the word that best describes my outlook on life.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q2">
     <span id="v2" class="liveScore"></span>
     </div>
 
-    <p id="prompt3">3) The world is an alarming yet fascinating place.</p>
+    <p id="prompt1">2) People would describe me as easygoing and unflappable; very little can disturb my equanimity.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q1">
+    <span id="v1" class="liveScore"></span>
+    </div>
+
+    <p id="prompt3">3) Give me a staircase into the unknown and I will be the first to climb it; I need to see what else is out there!</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q3">
     <span id="v3" class="liveScore"></span>
@@ -43,28 +46,28 @@
     <span id="v4" class="liveScore"></span>
     </div>
 
-    <p id="prompt5">5) Tomatoes are mystifying.</p>
-    <div class="slidecontainer">
-    <input type="range" min="1" max="5" value="3" class="slider_tomato" id="q5">
-    <span id="v5" class="liveScore"></span>
-    </div>
-
-    <p id="prompt6">6) Sometimes at twilight, I am seized by such unbridled joy that I just feel the need to sprint around in circles.</p>
+    <p id="prompt6">5) Sometimes at twilight, I am seized by such unbridled joy that I just feel the need to sprint around in circles.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q6">
     <span id="v6" class="liveScore"></span>
     </div>
 
-    <p id="prompt7">7) All I really need to be content with my life is a soft pillow.</p>
+    <p id="prompt7">6) All I really need to be content with my life is a soft pillow.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q7">
     <span id="v7" class="liveScore"></span>
     </div>
 
-    <p id="prompt8">8) I love cuddles and kisses and affection.</p>
+    <p id="prompt8">7) I adore cuddles and kisses and affection.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q8">
     <span id="v8" class="liveScore"></span>
+    </div>
+
+    <p id="prompt5">8) Tomatoes are mystifying.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider_tomato" id="q5">
+    <span id="v5" class="liveScore"></span>
     </div>
 
     <p id="prompt9">9) I always need to have the last word in an argument, and I'm not above a little hair-pulling.</p>
@@ -79,35 +82,37 @@
     <span id="v10" class="liveScore"></span>
     </div>
 
-    <p id="prompt11">11) I have psychic abilities; every so often I enter an involuntary trance and commune with my ancestors by making bird noises.</p>
+    <p id="prompt11">11) I have psychic abilities: every so often I enter an involuntary trance and commune with my ancestors by making bird noises.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q11">
     <span id="v11" class="liveScore"></span>
     </div>
 
-    <p id="prompt12">12) When overwhelmed by emotions, I cope by expressing myself through art (which usually takes the form of chewing plastic).</p>
+    <p id="prompt12">12) When overwhelmed by emotion, I cope by expressing myself through art (which usually takes the form of chewing plastic).</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q12">
     <span id="v12" class="liveScore"></span>
     </div>
 
-    <p id="prompt13">13) I am introverted and generally rather quiet (some would say sullen), but when I want something I know how to make myself heard, usually by shrieking at 6 am.</p>
+     <p id="prompt15">13) I am frequently irked by the childish shenanigans of my companions.</p>
+    <div class="slidecontainer">
+    <input type="range" min="1" max="5" value="3" class="slider" id="q15">
+    <span id="v15" class="liveScore"></span>
+    </div>
+
+    <p id="prompt13">14) I am introverted and generally rather quiet (some would say sullen), but when I want something I know how to make myself heard, usually by shrieking for lettuce at 6 am.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q13">
     <span id="v13" class="liveScore"></span>
     </div>
 
-    <p id="prompt14">14) I am always the first to venture out into uncharted territory.</p>
+    <p id="prompt14">15) I am always the last one picked for team sports.</p>
     <div class="slidecontainer">
     <input type="range" min="1" max="5" value="3" class="slider" id="q14">
     <span id="v14" class="liveScore"></span>
     </div>
 
-    <p id="prompt15">15) I am frequently peeved by the childish shenanigans of those around me.</p>
-    <div class="slidecontainer">
-    <input type="range" min="1" max="5" value="3" class="slider" id="q15">
-    <span id="v15" class="liveScore"></span>
-    </div>
+   
 
     <br>
     <br> 
@@ -136,35 +141,45 @@
           <p class="traits">The rational, easygoing type: agreeable, self-controlled, adaptive, and complacent</p>
           <p class="traits">Basic Desire: Hay</p>
           <p class="traits">Basic Fear: Ramps</p>
-          <p class="traits">Ediths are...</p>
+          <p class="traits">Ediths are cool as cucumbers under most circumstances. Healthy Ediths are accepting, trusting, and stable; unhealthy Ediths can be obstinate, ..., and resistant to growth and change. they do occasionally lose their patience, but </p>
 
                     <!-- Slideshow container -->
           <div class="slideshow-container" id="slideshowE">
 
             <!-- Images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 5</div>
+              <div class="numbertext">1 / 7</div>
               <img src="assets/edith1.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 5</div>
+              <div class="numbertext">2 / 7</div>
               <img src="assets/edith2.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
+              <div class="numbertext">3 / 7</div>
               <img src="assets/edith3.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 5</div>
+              <div class="numbertext">4 / 7</div>
               <img src="assets/edith4.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 5</div>
+              <div class="numbertext">5 / 7</div>
               <img src="assets/edith5.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 7</div>
+              <img src="assets/edith6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="assets/edith7.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -180,6 +195,8 @@
             <span class="dot" onclick="currentSlide(3,slideshowE)"></span> 
             <span class="dot" onclick="currentSlide(4,slideshowE)"></span> 
             <span class="dot" onclick="currentSlide(5,slideshowE)"></span> 
+            <span class="dot" onclick="currentSlide(6,slideshowE)"></span> 
+            <span class="dot" onclick="currentSlide(7,slideshowE)"></span> 
           </div>
           </div>
 
@@ -194,7 +211,7 @@
           <p class="traits">The sensitive, withdrawn type: expressive, pensive, dramatic, and tempermental</p>
           <p class="traits">Basic Desire: Lettuce</p>
           <p class="traits">Basic Fear: Lack of lettuce</p>
-          <p class="traits">Mabels are emotional, introspective, and melancholy. A healthy Mabel is thoughtful, intuitive, and inclined towards the spiritual; an unhealthy Mabel can fall prey to melodrama, self-pity, and self-indulgence. Mabels occasionally lapse into periods of nihilism, wondering what really <i>is</i> the point to life, but they usually abandon such existential ponderings when lettuce is made available. Mabels are often homebodies, but they enjoy exploring and expanding their horizons when given the opportunity. They are selective about their companions yet extremely loyal once they have identified a true friend (though they are prone to petty squabbles). If you identify as a Mabel, you may have been "The Emo Kid" in high school. Of the five types, the Mabel is most likely to experience other-worldly phenomena and commune with The Great Beyond.</p>
+          <p class="traits">Mabels are emotional, introspective, and melancholy. Mabels occasionally lapse into periods of nihilism, wondering what really <i>is</i> the point of life, but they usually abandon such existential ponderings when lettuce is made available. A healthy Mabel is thoughtful, intuitive, and inclined towards the spiritual; an unhealthy Mabel can fall prey to melodrama, self-pity, and self-indulgence. Mabels are often homebodies, but they enjoy exploring and expanding their horizons when given the opportunity. They are selective about their companions yet extremely loyal once they have identified a true friend; they tend to love Ediths in their own curmudgeonly way, although the friendship is not without its squabbles. If you identify as a Mabel, you may have been "The Emo Kid" in high school. Of the five types, the Mabel is most likely to experience other-worldly phenomena and commune with The Great Beyond.</p>
 
           <br>
 
@@ -203,33 +220,38 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 6</div>
+              <div class="numbertext">1 / 7</div>
               <img src="assets/mabel1.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 6</div>
+              <div class="numbertext">2 / 7</div>
               <img src="assets/mabel2.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 6</div>
+              <div class="numbertext">3 / 7</div>
               <img src="assets/mabel3.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 6</div>
+              <div class="numbertext">4 / 7</div>
               <img src="assets/mabel4.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 6</div>
+              <div class="numbertext">5 / 7</div>
               <img src="assets/mabel5.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">6 / 6</div>
+              <div class="numbertext">6 / 7</div>
               <img src="assets/mabel6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="assets/mabel7.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -245,6 +267,7 @@
             <span class="dot" onclick="currentSlide(4,slideshowM)"></span> 
             <span class="dot" onclick="currentSlide(5,slideshowM)"></span> 
             <span class="dot" onclick="currentSlide(6,slideshowM)"></span> 
+            <span class="dot" onclick="currentSlide(7,slideshowM)"></span> 
           </div>
          </div>
 
@@ -259,7 +282,7 @@
           <p class="traits">The curious, cerebral type: perceptive, innovative, isolated, and anxious</p>
           <p class="traits">Basic Desire: Cucumbers</p>
           <p class="traits">Basic Fear: Excessive cuddling</p>
-          <p class="traits">Lolas are alert, insightful, and individualistic. The are constantly ... expand their knowledge and understanding of their surroundings, but they ... wary of the world and its workings. Not comfortable with ... displays of emotion, Lolas spend most of their time alone, and often feel ... The first to take the plunge into the unknown and to ... Occasionally beset by nervous tics, such as gnawing on ... </p>
+          <p class="traits">Lolas are alert, insightful, and individualistic. They constantly seek to expand their knowledge and understanding of their surroundings, and they are often the first to take the plunge into the unknown. However, they can also be wary of the world and its workings. A healthy Lola is observant, exploratory, imaginative, and capable of intense focus; an unhealthy Lola is easily overwhelmed by anxiety and sometime beset by nervous tics, such as gnawing on cage bars. Not comfortable with ostentatious displays of emotion, Lolas spend most of their time alone. It is possible to can earn their trust slowly and carefully, but expect it to take at least a year before a Lola is willing to cuddle with you. Lolas are utterly uninterested in petty social drama, and because of this they can seem a bit aloof to their peers. They are also quite shy, passive, and susceptible to bullying by the more dominant types, particularly Hesters. If you identify as a Lola, you may have been “The Nerd” in high school.</p>
 
           <br>
                               <!-- Slideshow container -->
@@ -267,33 +290,38 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 6</div>
+              <div class="numbertext">1 / 7</div>
               <img src="assets/lola1.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 6</div>
+              <div class="numbertext">2 / 7</div>
               <img src="assets/lola2.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 6</div>
+              <div class="numbertext">3 / 7</div>
               <img src="assets/lola3.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 6</div>
+              <div class="numbertext">4 / 7</div>
               <img src="assets/lola4.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 6</div>
+              <div class="numbertext">5 / 7</div>
               <img src="assets/lola5.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">6 / 6</div>
+              <div class="numbertext">6 / 7</div>
               <img src="assets/lola6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="assets/lola7.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -309,6 +337,7 @@
             <span class="dot" onclick="currentSlide(4,slideshowL)"></span> 
             <span class="dot" onclick="currentSlide(5,slideshowL)"></span> 
             <span class="dot" onclick="currentSlide(6,slideshowL)"></span> 
+            <span class="dot" onclick="currentSlide(7,slideshowL)"></span> 
           </div>
         </div>
 
@@ -323,40 +352,45 @@
           <p class="traits">The optimistic, fun-loving type: spontaneous, confident, willful, and confrontational</p>
           <p class="traits">Basic Desire: Room to zoom</p>
           <p class="traits">Basic Fear: "The Sky Hand"</p>
-          <p class="traits">Hesters are extroverted, bold, adventurous, and occasionally domineering. Of all the types, Hester ... of pure, simple joy: ... Excess energy... Hesters can be bullies however, and ... but their nature is such that they frequently almost immediately get over the fight and want to be friends again, much to the confusion of their ... Often very athletic </p>
+          <p class="traits">Hesters are extroverted, bold, adventurous, and occasionally domineering. Of all the types, Hesters are uniquely capable of experiencing pure, unadulterated joy, which they often express by sprinting in circles and leaping into the air. Healthy Hesters are cheerful, exuberant, and happy-go-lucky; unhealthy Hesters are pugnacious and pushy. Hesters don’t think too deeply about why things are the way they are; they are content to simply bask in the simple pleasures of life. Hesters can be hot-tempered and they often bully the more passive Guinneagram types, but their nature is such that they almost immediately get over the fight and want to be friends again. Hesters are usually quite strong and atheletic, and if you identify as a Hester, you may have been “The Jock” in high school. Hesters are primarily characterized by the simplicity and purity of their emotions, and though they lash out when irritated, they are fundamentally very good-natured.</p>
 
                     <!-- Slideshow container -->
           <div class="slideshow-container" id="slideshowH">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 6</div>
+              <div class="numbertext">1 / 7</div>
               <img src="assets/hester1.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 6</div>
+              <div class="numbertext">2 / 7</div>
               <img src="assets/hester2.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 6</div>
+              <div class="numbertext">3 / 7</div>
               <img src="assets/hester3.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 6</div>
+              <div class="numbertext">4 / 7</div>
               <img src="assets/hester4.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 6</div>
+              <div class="numbertext">5 / 7</div>
               <img src="assets/hester5.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">6 / 6</div>
+              <div class="numbertext">6 / 7</div>
               <img src="assets/hester6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="assets/hester7.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -373,6 +407,7 @@
             <span class="dot" onclick="currentSlide(4,slideshowH)"></span> 
             <span class="dot" onclick="currentSlide(5,slideshowH)"></span> 
             <span class="dot" onclick="currentSlide(6,slideshowH)"></span> 
+            <span class="dot" onclick="currentSlide(7,slideshowH)"></span> 
 
           </div>
         </div>
@@ -384,42 +419,47 @@
       </tr>
       <tr id="hidden_row5" class="hidden_row">
         <td colspan=2>
-          <p class="traits">The caring, interpersonal type: demonstrative, generous, people/pig-pleasing, and high-strung - Sid is right, this is not quite right...</p>
+          <p class="traits">The emotional, high-strung type: demonstrative, empathic, mercurial, and histrionic</p>
           <p class="traits">Basic Desire: Chin and ear scritchies</p>
           <p class="traits">Basic Fear: Haircuts</p> 
-          <p class="traits">Baahbaras are ... A healthy Baahbara is empathetic and ... An unhealthy Baahbara is needy, ... erratic, and ... Baahbara's approach everything with intensity: whether joy, fear, pain, or ..., ... their experience of every emotion is heightened. Because of this, they can often be irritable and ... Baahbaras have a great capactiy for ..., and can often be found comforting others, perhaps because they themselves are so ... to heightened emotions. Baahbaras also tend to be a bit vain about their appearance and pride themselves on... </p>
+          <p class="traits">The blessing and the curse of being a Baahbara is that they feel things more deeply than most. A healthy Baahbara is earnest, compassionate, and affectionate; an unhealthy Baahbara is needy, erratic, and melodramatic. Baahbaras approach everything in life with a characteristic intensity.  Their experience of every emotion -- from joy to fear, from impatience to contentment -- is unusually heightened. Whether they are eating so fast that they choke or drinking half their weight in water in one sitting, Baahbaras treat each day as though it were their last day on earth. This unrelenting intensity often makes Baahbaras cranky and irritable, but they also have a great capactiy for empathy. They can often be found comforting and caressing their loved ones, perhaps because they themselves are so sensitive to emotions and receptive to affection. Baahbaras also tend to be a bit vain about their appearance (in all fairness, they usually have great hair). If you identify as a Baahbara, you may have been “The Prom Queen” in high school.</p>
                               <!-- Slideshow container -->
           <div class="slideshow-container" id="slideshowB">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 6</div>
+              <div class="numbertext">1 / 7</div>
               <img src="assets/babz1.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 6</div>
+              <div class="numbertext">2 / 7</div>
               <img src="assets/babz2.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 6</div>
+              <div class="numbertext">3 / 7</div>
               <img src="assets/babz3.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 6</div>
+              <div class="numbertext">4 / 7</div>
               <img src="assets/babz4.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 6</div>
+              <div class="numbertext">5 / 7</div>
               <img src="assets/babz5.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">6 / 6</div>
+              <div class="numbertext">6 / 7</div>
               <img src="assets/babz6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="assets/babz7.png" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -436,6 +476,7 @@
             <span class="dot" onclick="currentSlide(4,slideshowB)"></span> 
             <span class="dot" onclick="currentSlide(5,slideshowB)"></span> 
             <span class="dot" onclick="currentSlide(6,slideshowB)"></span> 
+            <span class="dot" onclick="currentSlide(7,slideshowB)"></span> 
 
           </div>
            </div>
@@ -443,9 +484,9 @@
       </tr>
     </table>
   </div>
-    <br>
-    <br>
-    <p class="copyright">Copyright &#169; 2021 Olivia Waring</p>
+  <br>
+  <br>
+  <p class="copyright">Copyright &#169; 2021 Olivia Waring</p>
  
   <script src="actions.js"> </script>
   </body>
