@@ -113,6 +113,28 @@ e3.oninput = function() {
 
 getScore.onclick = function() {
 
+  var a = document.getElementById("hidden_row1");
+  var b = document.getElementById("hidden_row2");
+  var c = document.getElementById("hidden_row3");
+  var d = document.getElementById("hidden_row4");
+  var e = document.getElementById("hidden_row5");
+
+  if (a.style.display !== "none") {
+    a.style.display = "none";
+  }
+  if (b.style.display !== "none") {
+    b.style.display = "none";
+  }
+  if (c.style.display !== "none") {
+    c.style.display = "none";
+  }
+  if (d.style.display !== "none") {
+    d.style.display = "none";
+  }
+  if (e.style.display !== "none") {
+    e.style.display = "none";
+  }
+
   var x = document.getElementById("afterclick");
   if (x.style.display === "none") {
     x.style.display = "block"; 
@@ -140,30 +162,35 @@ getScore.onclick = function() {
           yourType = yourType.concat(" and ");
         }
         yourType = yourType.concat("an Edith");
+        showHideRow('hidden_row1');
       }          
       else if (i==1) {
         if (yourType !== "") {
           yourType = yourType.concat(" and ");
         }
         yourType = yourType.concat("a Mabel");
+        showHideRow('hidden_row2');
       }
       else if (i==2) {
         if (yourType !== "") {
           yourType = yourType.concat(" and ");
         }
         yourType = yourType.concat("a Lola");
+        showHideRow('hidden_row3');
       }
       else if (i==3) {
         if (yourType !== "") {
           yourType = yourType.concat(" and ");
         }
         yourType = yourType.concat("a Hester");
+        showHideRow('hidden_row4');
       }
       else if (i==4) {
         if (yourType !== "") {
           yourType = yourType.concat(" and ");
         }
         yourType = yourType.concat("a Baahbara");
+        showHideRow('hidden_row5');
       }
     }
 
